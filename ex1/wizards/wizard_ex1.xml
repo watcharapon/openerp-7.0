@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+                                                                                                                                                       
+<record id="view_wizard_ex1" model="ir.ui.view">
+    <field name="name">wizard.ex1.form</field>
+    <field name="model">wizard.ex1</field>
+    <field name="arch" type="xml">
+        <form string="wizard ex1" version="7.0">
+            <p class="oe_grey">                                                                                                                    
+                    All items in these order lines will be invoiced. You can also invoice a percentage of the sales order                              
+                    or a fixed price (for advances) directly from the sales order form if you prefer.                                                  
+            </p>   
+            <label for="name"/>
+            <field name="name"/>
+
+            <footer>                                                                                                                               
+            <!--<button name="mybutton1" string="Test" type="object"                                                      -->
+            <!--context="{'somethin': True}" class="oe_highlight"/>                                                                       -->
+                <button name="mybutton2" string="Click Me" class="oe_highlight"/>                                         
+                or                                                                                                                                 
+                <button string="Cancel" class="oe_link" special="cancel" />                                                                        
+            </footer>     
+
+        </form>
+    </field>
+</record>
+
+<record id="act_wizard_ex1" model="ir.actions.act_window">                                                                                             
+    <field name="name">Wizard Ex1</field>                                                                                                              
+    <field name="type">ir.actions.act_window</field>                                                                                                   
+    <field name="res_model">wizard.ex1</field>                                                                                                         
+    <field name="view_type">form</field>                                                                                                               
+    <field name="view_mode">form</field>                                                                                                               
+    <field name="target">new</field>                                                                                                                   
+</record>
+
+
+<menuitem id="menu_wizard" parent="menu_root" name="Wizards" action="act_wizard_ex1" sequence="25"/>
+<menuitem id="menu_wizard_ex1" parent="menu_wizard" name="Wizard Obj1" action="act_wizard_ex1" sequence="25"/>
+
+</data>
+</openerp>

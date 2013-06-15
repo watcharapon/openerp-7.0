@@ -1,0 +1,294 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* ex1
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-06-14 18:03+0000\n"
+"PO-Revision-Date: 2013-06-15 01:08+0700\n"
+"Last-Translator: watcha.ac <watcha.ac@almacom.co.th>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: ex1
+#: model:ir.actions.act_window,name:ex1.act_wizard_ex1
+msgid "Wizard Ex1"
+msgstr "วิซาส แบบทดสอบที่ 1"
+
+#. module: ex1
+#: selection:ex1.obj2,choice:0
+msgid "No"
+msgstr "ไม่"
+
+#. module: ex1
+#: model:res.groups,name:ex1.group_ex1
+msgid "Test Group"
+msgstr "ทดลองกลุ่ม"
+
+#. module: ex1
+#: view:wizard.ex1:0
+msgid "Click Me"
+msgstr "คลิกฉันที"
+
+#. module: ex1
+#: model:ir.ui.menu,name:ex1.menu_wizard
+msgid "Wizards"
+msgstr "วิซาส"
+
+#. module: ex1
+#: report:ex1.obj1:0
+msgid "$F{name}"
+msgstr ""
+
+#. module: ex1
+#: field:ex1.obj2,choice:0
+msgid "yes/no"
+msgstr "ใช่ / ไม่"
+
+#. module: ex1
+#: field:ex1.obj3,obj2_ids:0
+msgid "Obj3 & Obj2"
+msgstr "อ็อปเจ็ค1 / อ็อปเจ็ค 2"
+
+#. module: ex1
+#: view:ex1.obj4.line:0
+msgid "obj4_lines"
+msgstr ""
+
+#. module: ex1
+#: view:ex1.obj1:0
+#: model:ir.actions.act_window,name:ex1.act_obj1
+#: model:ir.actions.report.xml,name:ex1.ex1_obj1
+#: model:ir.ui.menu,name:ex1.menu_obj1
+msgid "Obj1"
+msgstr "อ็อปเจ็ค1"
+
+#. module: ex1
+#: model:ir.actions.act_window,help:ex1.act_obj1
+msgid ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"        Click to create obj1 \n"
+"      </p><p>\n"
+"        Here you can see the object\n"
+"      </p>\n"
+"    "
+msgstr ""
+
+#. module: ex1
+#: view:ex1.obj1:0
+msgid "My Button"
+msgstr "ปุ่มของฉัน"
+
+#. module: ex1
+#: view:ex1.obj4:0
+#: field:ex1.obj4.line,obj4_id:0
+msgid "Obj4"
+msgstr ""
+
+#. module: ex1
+#: model:ir.model,name:ex1.model_ex1_obj3
+msgid "ex1.obj3"
+msgstr ""
+
+#. module: ex1
+#: model:ir.model,name:ex1.model_ex1_obj2
+msgid "ex1.obj2"
+msgstr ""
+
+#. module: ex1
+#: field:ex1.obj4,obj4_lines:0
+msgid "Obj4 Lines"
+msgstr ""
+
+#. module: ex1
+#: view:wizard.ex1:0
+msgid ""
+"All items in these order lines will be invoiced. You can also invoice a percentage of the sales order                              \n"
+"                    or a fixed price (for advances) directly from the sales order form if you prefer."
+msgstr ""
+
+#. module: ex1
+#: model:ir.model,name:ex1.model_ex1_obj5
+msgid "ex1.obj5"
+msgstr ""
+
+#. module: ex1
+#: model:ir.model,name:ex1.model_ex1_obj4
+msgid "ex1.obj4"
+msgstr ""
+
+#. module: ex1
+#: model:ir.ui.menu,name:ex1.menu_wizard_ex1
+msgid "Wizard Obj1"
+msgstr ""
+
+#. module: ex1
+#: model:ir.model,name:ex1.model_wizard_ex1
+msgid "wizard.ex1"
+msgstr ""
+
+#. module: ex1
+#: model:ir.model,name:ex1.model_ex1_obj4_line
+msgid "ex1.obj4.line"
+msgstr ""
+
+#. module: ex1
+#: model:ir.ui.menu,name:ex1.menu_ex1
+msgid "Sub Ex1"
+msgstr ""
+
+#. module: ex1
+#: model:ir.actions.act_window,name:ex1.act_obj3
+#: model:ir.ui.menu,name:ex1.menu_obj3
+msgid "Obj3 (ex.many2many)"
+msgstr ""
+
+#. module: ex1
+#: view:ex1.obj1:0
+#: field:ex1.obj1,odate:0
+msgid "Date"
+msgstr ""
+
+#. module: ex1
+#: field:ex1.obj1,ointeger:0
+#: field:ex1.obj4.line,ointeger:0
+msgid "Integer"
+msgstr ""
+
+#. module: ex1
+#: field:ex1.obj1,y_name:0
+msgid "y_name"
+msgstr ""
+
+#. module: ex1
+#: view:ex1.obj1:0
+#: field:ex1.obj1,name:0
+#: field:wizard.ex1,name:0
+msgid "Name"
+msgstr "ชื่อ"
+
+#. module: ex1
+#: view:ex1.obj4:0
+msgid "Obj4 lines"
+msgstr ""
+
+#. module: ex1
+#: view:ex1.obj3:0
+msgid "Obj3"
+msgstr ""
+
+#. module: ex1
+#: view:ex1.obj1:0
+msgid "e.g. John"
+msgstr ""
+
+#. module: ex1
+#: view:wizard.ex1:0
+msgid "Cancel"
+msgstr ""
+
+#. module: ex1
+#: help:ex1.obj1,otext:0
+msgid "No limit size"
+msgstr ""
+
+#. module: ex1
+#: field:ex1.obj1,obj2_ids:0
+#: model:ir.actions.act_window,name:ex1.act_obj2
+#: model:ir.ui.menu,name:ex1.menu_obj2
+msgid "Obj2"
+msgstr "อ็อปเจ็ค 2"
+
+#. module: ex1
+#: selection:ex1.obj2,choice:0
+msgid "Yes"
+msgstr "ใช่"
+
+#. module: ex1
+#: view:wizard.ex1:0
+msgid "wizard ex1"
+msgstr ""
+
+#. module: ex1
+#: view:ex1.obj1:0
+msgid "You note is here!"
+msgstr ""
+
+#. module: ex1
+#: field:ex1.obj1,x_name:0
+msgid "x_name"
+msgstr ""
+
+#. module: ex1
+#: report:ex1.obj1:0
+#: field:ex1.obj2,name:0
+#: field:ex1.obj3,name:0
+#: field:ex1.obj4,name:0
+#: field:ex1.obj4.line,name:0
+msgid "name"
+msgstr "ขื่อ"
+
+#. module: ex1
+#: view:ex1.obj1:0
+#: field:ex1.obj1,otext:0
+msgid "Text"
+msgstr "เทค"
+
+#. module: ex1
+#: help:ex1.obj1,obj2_ids:0
+msgid "help ob2"
+msgstr ""
+
+#. module: ex1
+#: field:ex1.obj1,ofloat:0
+#: field:ex1.obj4.line,ofloat:0
+msgid "Float"
+msgstr ""
+
+#. module: ex1
+#: report:ex1.obj1:0
+msgid "tr(\"name\")"
+msgstr ""
+
+#. module: ex1
+#: view:ex1.obj1:0
+msgid "Number"
+msgstr ""
+
+#. module: ex1
+#: view:wizard.ex1:0
+msgid "or"
+msgstr ""
+
+#. module: ex1
+#: view:ex1.obj1:0
+#: field:ex1.obj1,oboolean:0
+msgid "Boolean"
+msgstr ""
+
+#. module: ex1
+#: field:ex1.obj1,company_id:0
+msgid "unknown"
+msgstr "ไม่ระบุ"
+
+#. module: ex1
+#: model:ir.actions.act_window,name:ex1.act_obj4
+#: model:ir.ui.menu,name:ex1.menu_obj4
+msgid "Obj4 (ex.one2may and many2one)"
+msgstr ""
+
+#. module: ex1
+#: model:ir.ui.menu,name:ex1.menu_root
+msgid "Ex 1"
+msgstr "แบบทดสอบที่ 1"
+
+#. module: ex1
+#: model:ir.model,name:ex1.model_ex1_obj1
+msgid "ex1.obj1"
+msgstr ""
+

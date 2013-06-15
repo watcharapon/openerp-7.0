@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+                                                                                                                                                       
+<record id="group_ex1" model="res.groups">                                                                                          
+    <field name="name">Test Group</field>                                                                                                   
+</record>     
+
+<record id="view_obj1_form" model="ir.ui.view">
+    <field name="name">ex1.obj1.form</field>
+    <field name="model">ex1.obj1</field>
+    <field name="arch" type="xml">
+        <form string="Obj1" version="7.0">
+        <sheet>
+        <!--limit size of textbox for title-->
+            <div class="oe_title">                                                                                                        
+                <h1>
+                    <label for="name" string="Name" class="oe_edit_only"/>
+                    <field name="name" required="True" placeholder="e.g. John"/>
+                </h1>
+
+                    <!--show label & textbox-->
+                    <label for="obj2_ids" class="oe_edit_only"/>                                                                              
+                    <h2>
+                        <field name="obj2_ids"/>
+                    </h2>
+            </div>
+            
+            <!--set button to the right corner-->
+             <div class="oe_right oe_button_box" name="buttons">
+                <button string="My Button" name="mybutton" type="object"/>
+             </div>
+
+            <notebook colspan="4">
+                <page string="Text">
+                    <separator string="You note is here!" colspan="4"/>
+                    <field name="otext" nolabel="1"/>
+                </page>
+                <page string="Number">
+                    <field name="ointeger"/>
+                    <field name="ofloat"/>
+                </page>
+                <page string="Boolean">
+                    <field name="oboolean"/>
+                </page>
+                <page string="Date">
+                    <field name="odate"/>
+                </page>
+            </notebook> 
+        </sheet>
+        </form>
+    </field>
+</record>
+
+<record id="view_obj1_tree" model="ir.ui.view">
+    <field name="name">ex1.obj1.tree</field>
+    <field name="model">ex1.obj1</field>
+    <field name="arch" type="xml">
+        <tree string="Obj1">
+            <field name="name"/>
+            <field name="obj2_ids"/>
+        </tree>
+    </field>
+</record>
+
+<record id="view_obj3_form" model="ir.ui.view">
+    <field name="name">ex1.obj3.form</field>
+    <field name="model">ex1.obj3</field>
+    <field name="arch" type="xml">
+        <form string="Obj3" version="7.0">
+            <field name="name" colspan="4"/>
+            <field name="obj2_ids"/>
+        </form>
+    </field>
+</record>
+
+<record id="view_obj4_form" model="ir.ui.view">
+    <field name="name">ex1.obj4.form</field>
+    <field name="model">ex1.obj4</field>
+    <field name="arch" type="xml">
+        <form string="Obj4" version="7.0">
+            <field name="name" colspan="4"/>
+            <field name="obj4_lines">
+                <tree string="Obj4 lines">
+                    <field name="name"/>
+                    <field name="ointeger"/>
+                    <field name="ofloat"/>
+                </tree>
+            </field>
+        </form>
+    </field>
+</record>
+
+<record id="view_obj4_line_form" model="ir.ui.view">
+    <field name="name">ex1.obj4.line.form</field>
+    <field name="model">ex1.obj4.line</field>
+    <field name="arch" type="xml">
+        <form string="obj4_lines" version="7.0">
+            <field name="name"/>
+            <field name="ointeger"/>
+            <field name="ofloat"/>
+        </form>
+    </field>
+</record>
+
+<record model="ir.actions.act_window" id="act_obj1">
+	<field name="name">Obj1</field>
+	<field name="res_model">ex1.obj1</field>
+	<field name="view_type">form</field>
+	<field name="view_mode">tree,form</field>
+    <!-- Show the arrow if not create obj1 yet -->
+    <field name="help" type="html">
+      <p class="oe_view_nocontent_create">
+        Click to create obj1 
+      </p><p>
+        Here you can see the object
+      </p>
+    </field>
+</record>
+
+<record model="ir.actions.act_window" id="act_obj2">
+    <field name="name">Obj2</field>
+    <field name="res_model">ex1.obj2</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+
+<record model="ir.actions.act_window" id="act_obj3">
+    <field name="name">Obj3 (ex.many2many)</field>
+    <field name="res_model">ex1.obj3</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<record model="ir.actions.act_window" id="act_obj4">
+    <field name="name">Obj4 (ex.one2may and many2one)</field>
+    <field name="res_model">ex1.obj4</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+
+<!-- in version 7.0 
+    Ex1 | setting
+        - menu_ex1 (need 2 menuitem)
+            - menu_obj1_sub
+            - menu_obj2_sub
+            - menu_obj3_sub
+            - menu_obj4_sub
+     
+     -->
+<menuitem id="menu_root" name="Ex 1" sequence="0"/>
+
+<!--
+     sub menu
+     -->
+<menuitem id="menu_ex1" parent="menu_root" name="Sub Ex1" sequence="1"/>
+<menuitem id="menu_obj1" parent="menu_ex1" action="act_obj1" sequence="5"/>
+<menuitem id="menu_obj2" parent="menu_ex1" action="act_obj2" sequence="10"/>
+<menuitem id="menu_obj3" parent="menu_ex1" action="act_obj3" sequence="15"/>
+<menuitem id="menu_obj4" parent="menu_ex1" action="act_obj4" sequence="20"/>
+
+</data>
+</openerp>

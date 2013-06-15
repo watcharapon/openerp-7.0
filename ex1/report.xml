@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<!--
+     use menu="0" to hiding the link's report according model that you map
+     -->
+    <report id="ex1_obj1" string="Obj1" model="ex1.obj1" name="ex1.obj1" rml="ex1/reports/report1.jrxml"/>
+
+<!--
+        rml=<module_name>/folder_reports/report_name.jrml
+        -->
+
+</data>
+</openerp>

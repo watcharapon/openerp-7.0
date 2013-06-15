@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ex1_obj1,access_ex1_obj1,model_ex1_obj1,,1,1,1,1
+access_ex1_obj2,access_ex1_obj2,model_ex1_obj2,,1,1,1,1
+access_ex1_obj3,access_ex1_obj3,model_ex1_obj3,,1,1,1,1
+access_ex1_obj4,access_ex1_obj4,model_ex1_obj4,,1,1,1,1
+access_ex1_obj4_line,access_ex1_obj4_line,model_ex1_obj4_line,,1,1,1,1
+access_ex1_obj5,access_ex1_obj5,model_ex1_obj5,,1,1,1,1
